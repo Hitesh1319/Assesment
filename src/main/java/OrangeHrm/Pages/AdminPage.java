@@ -1,15 +1,16 @@
 package OrangeHrm.Pages;
 
+import org.checkerframework.checker.units.qual.A;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class AdminPage {
     WebDriver driver;
-    By admin= new By.ByClassName("oxd-text oxd-text--span oxd-main-menu-item--name");
-  //  public adminPage(WebDriver driver){
-  //      this.driver=driver;
-    //}
+    By add = By.xpath("//button[@class='oxd-button oxd-button--medium oxd-button--secondary' ][1]");
+    public AdminPage(WebDriver driver){
+        this.driver=driver;
+    }
     public void admin(){
-        driver.findElement(admin).click();
+        driver.findElement(add).click();
     }
 }
