@@ -9,6 +9,6 @@ public class LoginTest extends BaseClass{
         pageFactory.getMenu().menu();
         pageFactory.getAdminPage().admin();
         pageFactory.getAddUser().addUser();
-        close();
+        //close();
     }
 }
